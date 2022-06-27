@@ -1,0 +1,37 @@
+
+<form [formGroup]="contactForm"  class="text-white  ">
+    <div  class="form-group my-3">
+        <label>client Name :</label>
+        <input formControlName="clientName" class="form-control" placeholder="Name must be between 2 and 8">
+        <div *ngIf="contactForm.controls.clientName.errors != null && contactForm.controls.clientName.touched != false" class=" p-2 m-2 ">
+            <p class="text-danger">clientName not valid</p>
+        </div>
+    </div>
+    <div  class="form-group my-2">
+        <label>client Age :</label>
+        <input formControlName="clientAge" type="number" class="form-control" placeholder="Age must be between 10 and 80">
+        <div *ngIf="contactForm.controls.clientAge.errors != null" class=" p-2 m-2 ">
+            <p class="text-danger">clientage not valid</p>
+        </div>
+    </div>
+    <div  class="form-group my-2">
+        <label>client Mail :</label>
+        <input formControlName="clientMail" class="form-control" placeholder="Mail must be right">
+        <div *ngIf="contactForm.controls.clientMail.errors != null" class=" p-2 m-2 ">
+            <p class="text-danger">clientMail not valid</p>
+        </div>
+    </div>
+    <div  class="form-group my-2">
+        <label>message title :</label>
+        <input formControlName="messageTitle" class="form-control" placeholder="Message title must be between A-z"> 
+        <div *ngIf="contactForm.controls.messageTitle.errors != null" class=" p-2 m-2 ">
+            <p class="text-danger">message title not valid</p>
+        </div>
+    </div>
+    <div  class="form-group my-2">
+        <label>Messsage Body :</label>
+        <textarea formControlName="messageBody" class="form-control"></textarea>
+        
+    </div>
+    <button [disabled]="!contactForm.valid" type="submit" class="btn btn-info my-2">Send</button>
+</form>

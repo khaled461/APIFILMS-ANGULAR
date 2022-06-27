@@ -1,0 +1,33 @@
+
+$fontFamily :'Montserrat' , 'sans-serif' ;
+$borderHeight :1px ;
+$mainWidth :400px ;
+$fontSize :16px;
+$bgColor : #131722;
+$lightBgColor:#24baef;
+$bgTransparent : rgba(36, 186, 239, .6);
+$fontColor:#fff ;
+$secondFontColor:#949cb0;
+$borderColor :#a8a8a83d ;
+  
+body
+{
+    background-color: $bgColor;
+    font-family: $fontFamily;
+}
+
+.vote
+{
+    background-color: $lightBgColor ;
+    color :$fontColor ;
+    padding: 8px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.brdr
+{
+    height: $borderHeight;
+    background-color: $borderColor;
+}

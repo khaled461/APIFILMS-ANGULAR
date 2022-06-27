@@ -1,0 +1,14 @@
+.nextPage
+{
+    width: 50%;
+    margin: auto;
+}
+@media (max-width:990px)
+{
+    .nextPage
+    {
+        font-size: 10px;
+        margin: 0;
+
+    }
+}

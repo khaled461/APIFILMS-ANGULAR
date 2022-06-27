@@ -1,0 +1,58 @@
+@import '../../styles.scss';
+nav 
+{
+    .links
+    {
+        a
+        {
+            color: $fontColor;
+            text-decoration: none;
+        }        
+    }
+    .icons
+    {
+        color: $fontColor;
+    }
+
+}
+.navbar
+{
+    background-color: $bgColor !important;
+}
+.navbar img 
+{
+    width: 200px;
+}
+
+.navbar-collapse
+{
+    justify-content: space-between;
+}
+.navbar-collapse ul
+{
+    width: 80%;
+    justify-content: space-around;
+}
+.navbar-collapse ul a
+{
+    color: white;
+}
+.navbar-collapse .icons
+{
+    width: 20%;
+    justify-content: space-around;
+}
+
+@media (max-width:990px)
+{
+    .navbar-collapse .icons
+    {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }   
+    .navbar-collapse ul li
+    {
+        margin: 5px;
+    }
+}
